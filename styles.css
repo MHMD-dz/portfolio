@@ -1,0 +1,274 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #63dff5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+    max-width: 1200px;
+    padding: 20px 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: #0051ff;
+}
+
+.nav-sect {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-sect a {
+    text-decoration: none;
+    font-size: large;
+    color: #001435;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-sect a:hover {
+    color: #558bff;
+}
+
+/* first stuff */
+.first {
+    background-color: #c3d6ff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    margin: 0 auto;
+    max-width: 1700px;
+}
+
+.first-content {
+    max-width: 600px;
+    padding-left: 40px;
+}
+
+.first-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
+
+.first-title span {
+    color: #306cec;
+}
+
+.first-wasf {
+    font-size: 1.2rem;
+    color: #3d434b;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: #2563eb;
+    color: white;
+    padding: 17px 27px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #548aff;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #2563eb;
+}
+
+
+/* Sections */
+section {
+    padding: 96px 36px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    background: #63dff5;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+/* Skil */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px ;
+}
+
+.skill-card {
+    background: #a2f4ff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 33px;
+    color: #0051ff;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    background-color: #619eff;
+}
+
+.skill-name {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Project */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #94ecf8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+     background-color: #619eff;
+}
+
+.project-img {
+    height: 200px;
+    background: #b4d3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e293b;
+    font-size: 2rem;
+}
+
+.project-wasf {
+    padding: 30px;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: #0784f8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.project-link:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+/* my midia */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 36px;
+    margin-top: 40px;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #94ecf8;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem ;
+    color: black;
+    text-decoration: none   ;
+    justify-content: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #2a6bf7;
+    color: white;
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #0040a7;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.hi{
+    font-size: large;
+}
+
+
+@media (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .first-title {
+        font-size: 40px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
