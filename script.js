@@ -1,15 +1,13 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.onclick = e => {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: "smooth"});
+        };
     });
-});
 
 function animateOnScroll() {
-    const elements = document.querySelectorAll('.skill-card, .project-card');
-    elements.forEach(el => {
+    const gotoo = document.querySelectorAll('.skill-card, .project-card');
+    gotoo.forEach(el => {
         const elPosition = el.getBoundingClientRect().top;
         const screenPosition = window.innerHeight / 1.2;
         
